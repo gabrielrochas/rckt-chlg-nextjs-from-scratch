@@ -1,0 +1,57 @@
+.posts {
+  position: relative;
+  min-height: 100vh;
+  max-width: 720px;
+  margin: 4rem auto;
+
+  a {
+    display: block;
+    text-decoration: none;
+
+    & + a {
+      margin-top: 3rem;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--gray-100);
+      font-size: 1.75rem;
+      font-weight: bold;
+
+    }
+
+    p {
+      color: var(--gray-300);
+      font-size: 1.125rem;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      max-width: 244px;
+      margin-top: 1.875rem;
+      color: var(--gray-500);
+      font-size: 0.875rem;
+
+      svg {
+        margin-right: 0.5rem;
+
+        & + svg {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    transition: filter 0.5s;
+
+    &:hover {
+      filter: brightness(0.7)
+    }
+  }
+
+  .loadMore {
+    position: absolute;
+    bottom: 0;
+  }
+}
